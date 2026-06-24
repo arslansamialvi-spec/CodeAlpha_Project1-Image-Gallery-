@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+</div>
+
+<div class="gallery">
+
+    <div class="gallery-item nature">
+        <img src="images/nature-1.jpg" alt="">
+    </div>
+
+    <div class="gallery-item city">
+        <img src="images/city-1.jpg" alt="">
+    </div>
+
+    <div class="gallery-item nature">
+        <img src="images/nature-2.jpg" alt="">
+    </div>
+
+    <div class="gallery-item city">
+        <img src="images/city-2.jpg" alt="">
+    </div>
+
+    <div class="gallery-item nature">
+        <img src="images/nature-3.jpg" alt="">
+    </div>
+
+    <div class="gallery-item city">
+        <img src="images/city-3.jpg" alt="">
+    </div>
+
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <button class="prev">&#10094;</button>
+    <img class="lightbox-img" src="" alt="">
+    <button class="next">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
